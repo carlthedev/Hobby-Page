@@ -1,0 +1,190 @@
+
+:root {
+    --F1Red: red;
+  }
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(157, 155, 155);
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Landing */
+
+#sc {
+    min-height: 430px;
+    color: var(--F1Red);
+    text-align: center;
+}
+
+#sc p{
+    color: #fff;
+    text-align: center;
+    font-family: baloo;
+    padding: 0;
+}
+
+.socials{
+    display: flex;
+    background-color: none;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 0px;
+    padding-right: 50px;
+}
+
+.socials li{
+    color: var(--F1Red);
+    list-style: none;
+}
+
+.socials a{
+    color: var(--F1Red);
+    list-style: none;
+}
+
+#sc h1 {
+    padding-top: 50px;
+    text-shadow: 2px 2px 3px #030303f5;
+    font-family: baloo;
+}
+
+#sc .content,
+#section-a .content {
+    padding: 0 .5em;
+}
+
+#sc .bg-image {
+    position: absolute; 
+    top:0;
+    background: #333 url("102.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#sc h1 {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+#sc .content,
+#section-a .content {
+    padding: 0 1.5em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 55px;
+    font-family: baloo;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+#main {
+    font-family: baloo;
+}
+
+/* Section A & D */
+#section-a, #section-d {
+    background: #c4bfbf;
+    color: #333;
+    padding: 2em;
+}
+
+/* Section b */
+
+#section-b {
+    padding: 2em 1.2em 1em;
+    background-color: #c4bfbf;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li {
+    margin-bottom: 1em;
+    background: var(--F1Red);
+}
+
+.card-content {
+    padding: 1.5em;
+    border-radius: 50px;
+}
+
+/* Section C */
+
+.twitter {
+    padding-bottom: 2em;
+}
+
+/* Footer */
+
+#bga {
+    background-color: black;
+    padding-top: 0.5em;
+    color: white;
+    text-decoration: none;
+    font-size: 70%;
+}
+
+#bga a{
+    color: rgb(110, 107, 107);
+    text-decoration: none;
+}
+
+.list {
+    list-style-position: inside;
+}
+
+/* Media Queries */
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    .content,
+    #section-b ul {
+        grid-column: 2/4;
+    }
+
+    .box, #main-footer div {
+        grid-column: span 2;
+    }
+
+    #section-b ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #section-b li {
+        width: 31%;
+    }
+}
