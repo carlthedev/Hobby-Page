@@ -127,11 +127,6 @@ p {
     background: var(--F1Red);
 }
 
-.card-content {
-    padding: 1.5em;
-    border-radius: 50px;
-}
-
 /* Section C */
 
 .twitter {
