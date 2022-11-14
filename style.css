@@ -48,10 +48,10 @@ body {
     list-style: none;
 }
 
-#sc h1 {
-    padding-top: 50px;
-    text-shadow: 2px 2px 3px #030303f5;
+.content h1 {
+    text-shadow: 5px 5px 5px #022504f5;
     font-family: baloo;
+    padding-top: 9vh;
 }
 
 #sc .content,
@@ -70,11 +70,6 @@ body {
     height: 450px;
     z-index: -1;
     opacity: 0.3;
-}
-
-#sc h1 {
-    padding-top: 50px;
-    padding-bottom: 0;
 }
 
 #sc .content,
@@ -141,8 +136,13 @@ p {
 
 .twitter {
     padding-bottom: 2em;
+    width: 80%;
+    margin: auto;
 }
 
+#section-C {
+    background-color: black;
+}
 /* Footer */
 
 #bga {
@@ -151,6 +151,7 @@ p {
     color: white;
     text-decoration: none;
     font-size: 70%;
+    padding: 10px;
 }
 
 #bga a{
@@ -173,10 +174,6 @@ p {
     .content,
     #section-b ul {
         grid-column: 2/4;
-    }
-
-    .box, #main-footer div {
-        grid-column: span 2;
     }
 
     #section-b ul {
